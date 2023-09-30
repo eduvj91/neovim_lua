@@ -1,18 +1,21 @@
 return {
 	"nvim-tree/nvim-tree.lua",
 	name = 'nvim-tree',
-	sort = {
-		sorter = "case:sensitive",
+	opts ={
+				sort = {
+			sorter = "case:sensitive",
+		},
+		vew = {
+			width = 30,
+		},
+		renderer = {
+			group_empty = true,
+		},
+		filters = {
+			dotfiles = true,
+		},
+
 	},
-	vew = {
-		width = 30,
-	},
-    renderer = {
-      group_empty = true,
-    },
-    filters = {
-      dotfiles = true,
-    },
 	config = function ()
 		local function my_on_attach(bufnr)
 			local api = require "nvim-tree.api"
