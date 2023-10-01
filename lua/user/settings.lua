@@ -15,6 +15,7 @@ vim.opt.wrap = false
 vim.opt.breakindent = true
 vim.opt.signcolumn = 'yes'
 vim.opt.clipboard = 'unnamedplus'
+vim.opt.cursorline = true
 
 vim.opt.termguicolors = true
 

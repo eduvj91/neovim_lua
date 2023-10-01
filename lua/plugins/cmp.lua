@@ -70,7 +70,7 @@ function Plugin.config()
       ['<C-y>'] = cmp.mapping.confirm({select = true}),
       ['<CR>'] = cmp.mapping.confirm({select = false}),
 
-      ['<C-f>'] = cmp.mapping(function(fallback)
+      ['<c-f>'] = cmp.mapping(function(fallback)
         if luasnip.jumpable(1) then
           luasnip.jump(1)
         else
@@ -78,7 +78,7 @@ function Plugin.config()
         end
       end, {'i', 's'}),
 
-      ['<C-b>'] = cmp.mapping(function(fallback)
+      ['<c-b>'] = cmp.mapping(function(fallback)
         if luasnip.jumpable(-1) then
           luasnip.jump(-1)
         else
