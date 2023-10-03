@@ -18,6 +18,8 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.cursorline = true
 
 vim.opt.termguicolors = true
+vim.opt.background = 'dark'
+vim.g.gruvbox_contrast_dark = 'hard'
 
 vim.opt.spelllang = 'es,en_us'
 vim.opt.spell = true
